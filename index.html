@@ -1,0 +1,573 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Taras Villa Lonavala - 5 BHK private pool villa near Malavli Railway Station. View photos, amenities and send your enquiry on WhatsApp.">
+<meta property="og:type" content="website"><meta property="og:title" content="Taras Villa Lonavala - 5 BHK Villa with Private Pool"><meta property="og:description" content="Photos, amenities and rules. Send your enquiry directly on WhatsApp."><meta property="og:image" content="og.jpg"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/p29.jpg">
+<style>html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style><title>Taras Villa Lonavala</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+/* Layout: deck-style pages (one at a time) in a fixed shell; palms in corners, blue stars, navy-framed photos. Single white look taken from the deck. */
+:root{
+  --navy:#1e4d72; --blue:#0a4db3; --ink:#1b1b1f; --leaf:#4f7a2f; --paper:#ffffff; --mist:#eef3f8; --line:#c9d6e2; --err:#b3261e; --ok:#1c7a43;
+  --display:"Bricolage Grotesque","Arial Black",system-ui,sans-serif;
+  --body:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --top:58px; --bot:84px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;overflow-x:hidden}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+
+/* shell */
+.top{position:fixed;top:0;left:0;right:0;z-index:30;height:calc(var(--top) + env(safe-area-inset-top,0px));padding:env(safe-area-inset-top,0px) 16px 0;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:10px}
+.brand{font-family:var(--display);font-weight:800;color:var(--navy);font-size:1.05rem;letter-spacing:-.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.top-actions{display:flex;gap:8px;flex:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 20px;border-radius:999px;border:2px solid var(--navy);background:var(--navy);color:#fff;font-weight:600;font-size:.95rem;text-decoration:none;line-height:1.1;text-align:center}
+.btn:hover{background:var(--blue);border-color:var(--blue)}
+.btn.ghost{background:#fff;color:var(--navy)}
+.btn.ghost:hover{background:var(--mist);border-color:var(--navy)}
+.btn.sm{min-height:40px;padding:0 16px;font-size:.88rem}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(255,255,255,.97);border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px}
+#prev{justify-self:start}#next{justify-self:end}
+.count{font-size:.85rem;font-weight:600;color:var(--navy);text-align:center;font-variant-numeric:tabular-nums}
+.bar{position:absolute;left:0;top:-1px;height:3px;background:var(--blue);transition:width .3s}
+main{padding-top:calc(var(--top) + env(safe-area-inset-top,0px));padding-bottom:calc(var(--bot) + 24px + env(safe-area-inset-bottom,0px))}
+
+#next.go{background:var(--blue);border-color:var(--blue);min-height:54px;padding:0 30px;font-size:1.1rem;box-shadow:0 6px 18px rgba(10,77,179,.35)}
+#next.go:hover{background:var(--navy);border-color:var(--navy)}
+#prev{min-height:54px;font-size:1rem}
+.side{display:none}
+@media (min-width:1340px){.side{display:grid;place-items:center;position:fixed;top:50%;z-index:25;width:60px;height:60px;border-radius:50%;border:2px solid var(--navy);background:#fff;color:var(--navy);font-size:2.2rem;line-height:1;padding:0 0 4px;box-shadow:0 6px 20px rgba(30,77,114,.25)}.side:hover{background:var(--navy);color:#fff}.side.l{left:24px}.side.r{right:24px;background:var(--blue);border-color:var(--blue);color:#fff}}
+@media (prefers-reduced-motion:no-preference){#next.go.pulse{animation:pulse 1.8s ease-in-out infinite}@keyframes pulse{50%{transform:scale(1.06)}}}
+.formerr{display:none;margin:0 0 10px;padding:10px 14px;border-radius:12px;background:#fdecea;color:var(--err);font-weight:600;font-size:.92rem;text-align:center}
+.formerr.on{display:block}
+/* pages */
+.page{position:relative;overflow:hidden;min-height:calc(100dvh - var(--top) - var(--bot) - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));display:flex;align-items:center;padding:36px 16px}
+.page[hidden]{display:none}
+.page.enter{animation:fade .35s ease both}
+@keyframes fade{from{opacity:.001;transform:translateY(8px)}to{opacity:1;transform:none}}
+.wrap{position:relative;z-index:2;width:100%;max-width:1160px;margin:0 auto;min-width:0}
+.pm{position:absolute;z-index:1;pointer-events:none;height:auto;max-width:none;width:min(calc(var(--w)*.5vw),230px);transform:rotate(var(--r,0deg)) scaleX(var(--fx,1))}
+.pm.tl{top:-6%;left:-6%}.pm.tr{top:-5%;right:-5%}.pm.bl{bottom:-6%;left:-6%}.pm.br{bottom:-6%;right:-5%}
+.star{position:absolute;z-index:1;color:var(--blue);width:var(--s,40px);height:var(--s,40px);pointer-events:none;left:var(--x);top:var(--y)}
+h1,h2,.h-lg,.h-xl{font-family:var(--display);font-weight:800;color:var(--navy);letter-spacing:-.045em;line-height:.98;margin:0;text-wrap:balance}
+.h-xl{font-size:clamp(2.5rem,7.5vw,5.4rem)}
+.h-lg{font-size:clamp(2.3rem,6vw,4.6rem)}
+.sub{display:flex;gap:12px;align-items:flex-start;font-family:var(--display);font-weight:700;font-size:clamp(1.1rem,2.4vw,1.5rem);color:var(--ink);letter-spacing:-.01em;line-height:1.25}
+.sub svg{flex:none;width:34px;height:34px;color:var(--ink);margin-top:-2px}
+.lead{font-size:clamp(1rem,1.6vw,1.2rem);max-width:34em;margin:0}
+.stack{display:flex;flex-direction:column;gap:20px;min-width:0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,72px);align-items:center}
+.split>*{min-width:0}
+.frame{display:block;width:100%;border:3px solid var(--navy);border-radius:30px;overflow:hidden;background:var(--mist);aspect-ratio:var(--ar,4/3)}
+.frame img{display:block;width:100%;height:100%;object-fit:cover}
+.frame.tall{--ar:4/5}
+.cap{font-family:var(--display);font-weight:700;font-size:clamp(1.05rem,2.2vw,1.4rem);color:var(--ink)}
+.banner{display:flex;flex-direction:column;gap:28px}
+.banner .frame{--ar:2/1;max-width:880px;margin:0 auto}
+.banner .row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,5vw,64px);align-items:center}
+.banner .row>*{min-width:0}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(24px,4vw,56px);align-items:center}
+.hero .photo{aspect-ratio:3/4;border-radius:0 52% 52% 0/0 38% 38% 0;overflow:hidden;margin-left:-16px;max-height:72vh;width:calc(100% + 16px)}
+.hero .photo img{width:100%;height:100%;object-fit:cover;display:block}
+.hero .bhk{font-style:italic;text-align:right;font-size:1.15rem;margin:6px 0 0}
+.hero .box{display:flex;flex-direction:column;gap:22px}
+.meta{display:flex;flex-direction:column;gap:6px;font-size:1rem;overflow-wrap:anywhere}
+.meta b{font-style:italic;font-weight:600}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px}
+
+/* lists */
+.amen{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 28px}
+.amen li{display:flex;gap:10px;align-items:flex-start;font-size:1rem;line-height:1.4;padding:3px 0}
+.amen li::before{content:"";flex:none;width:14px;height:14px;margin-top:5px;background:var(--blue);clip-path:polygon(50% 0,62% 36%,100% 38%,70% 60%,80% 100%,50% 76%,20% 100%,30% 60%,0 38%,38% 36%)}
+.rules{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 28px}
+.rules li{display:flex;gap:14px;align-items:flex-start;padding:14px 16px;border:1.5px solid var(--line);border-radius:18px;background:rgba(255,255,255,.94);font-size:.98rem;line-height:1.5;min-width:0}
+.rules .n{flex:none;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-weight:600;font-size:.85rem;font-variant-numeric:tabular-nums}
+.rules .t{min-width:0;overflow-wrap:anywhere}
+.amen-title{font-family:var(--display);font-weight:700;font-size:clamp(1.25rem,2.6vw,1.7rem);color:var(--ink);letter-spacing:-.02em;line-height:1.2;display:flex;gap:14px;align-items:center}
+.amen-title i{flex:none;display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--blue);color:#fff}
+.amen-title svg{width:26px;height:26px}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gal button{padding:0;border:3px solid var(--navy);border-radius:24px;overflow:hidden;background:var(--mist);aspect-ratio:16/10;display:block;min-width:0}
+.gal img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.gal button:hover img{transform:scale(1.04)}
+.lb{position:fixed;inset:0;z-index:60;background:rgba(10,20,32,.92);display:flex;align-items:center;justify-content:center;padding:56px 12px}
+.lb img{max-width:100%;max-height:100%;border-radius:14px;display:block}
+.lb button{position:absolute;width:48px;height:48px;border-radius:50%;border:0;background:#fff;color:var(--navy);font-size:1.5rem;line-height:1;display:grid;place-items:center}
+.lb .x{top:calc(8px + env(safe-area-inset-top,0px));right:12px}.lb .pv{left:10px;top:50%}.lb .nx{right:10px;top:50%}
+
+/* enquiry */
+.enq{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(24px,4vw,56px);align-items:start}
+.enq aside{display:flex;flex-direction:column;gap:18px;min-width:0}
+.enq .contact{display:flex;flex-direction:column;gap:8px;font-size:.98rem;overflow-wrap:anywhere}
+.card{scroll-margin-top:calc(var(--top) + 12px);background:#fff;border:2px solid var(--navy);border-radius:28px;padding:clamp(18px,3vw,32px);box-shadow:0 12px 40px rgba(30,77,114,.12);min-width:0}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px 16px}
+.fgrid>*{min-width:0}
+.full{grid-column:1/-1}
+.fld{display:flex;flex-direction:column;gap:6px}
+.fld>label,.fld>.lbl{font-weight:600;font-size:.92rem;color:var(--navy)}
+.fld .opt{font-weight:400;color:#5b6b7a;font-size:.82rem}
+.in{width:100%;min-height:50px;padding:10px 14px;font:inherit;font-size:16px;color:var(--ink);background:#fff;border:2px solid var(--line);border-radius:14px;text-align:left}
+textarea.in{min-height:96px;resize:vertical;line-height:1.5}
+.in:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(10,77,179,.18)}
+.fld.bad .in,.fld.bad .chips{border-color:var(--err)}
+.err{color:var(--err);font-size:.84rem;min-height:0;display:none}
+.fld.bad .err{display:block}
+.hint{font-size:.8rem;color:#5b6b7a}
+.datebtn{display:flex;align-items:center;justify-content:space-between;gap:8px;cursor:pointer}
+.datebtn svg{flex:none;width:20px;height:20px;color:var(--navy)}
+.datebtn .ph{color:#7b8896}
+.pre{display:flex;align-items:stretch}
+.pre span{display:grid;place-items:center;padding:0 14px;background:var(--mist);border:2px solid var(--line);border-right:0;border-radius:14px 0 0 14px;font-weight:600;color:var(--navy)}
+.pre .in{border-radius:0 14px 14px 0}
+.step{display:grid;grid-template-columns:50px minmax(0,1fr) 50px;gap:8px}
+.step button{min-height:50px;border-radius:14px;border:2px solid var(--navy);background:#fff;color:var(--navy);font-size:1.5rem;line-height:1;font-weight:600}
+.step button:hover{background:var(--mist)}
+.step .in{text-align:center;font-weight:600;padding:10px 4px;-moz-appearance:textfield}
+.step .in::-webkit-outer-spin-button,.step .in::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:10px;border-radius:16px}
+.chips label{position:relative;display:block}
+.chips input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.chips span{display:flex;align-items:center;justify-content:center;min-height:50px;border:2px solid var(--line);border-radius:14px;font-weight:600;color:var(--navy);background:#fff}
+.chips input:checked+span{background:var(--navy);border-color:var(--navy);color:#fff}
+.chips input:focus-visible+span{outline:3px solid var(--blue);outline-offset:2px}
+.nights{font-size:.9rem;font-weight:600;color:var(--ok)}
+.submit{width:100%;min-height:56px;font-size:1.05rem;background:var(--blue);border-color:var(--blue)}
+.submit:hover{background:var(--navy);border-color:var(--navy)}
+.ok-card{display:flex;flex-direction:column;gap:16px}
+.ok-card h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+.msg{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--mist);border-radius:16px;padding:14px 16px;font-size:.92rem;line-height:1.55;margin:0;font-family:var(--body)}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.wa{background:#1c7a43;border-color:#1c7a43}.wa:hover{background:#14602f;border-color:#14602f}
+
+/* calendar + menu overlays */
+.ov{position:fixed;inset:0;z-index:50;background:rgba(10,20,32,.55);display:flex;align-items:center;justify-content:center;padding:16px}
+.ov[hidden]{display:none}
+.cal,.menu{width:100%;max-width:400px;max-height:calc(100dvh - 32px);overflow:auto;background:#fff;border-radius:24px;padding:18px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.cal-h{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.cal-h strong{font-family:var(--display);font-size:1.15rem;color:var(--navy);letter-spacing:-.02em;line-height:1.2}
+.x-btn{flex:none;width:44px;height:44px;border-radius:50%;border:2px solid var(--line);background:#fff;font-size:1.3rem;line-height:1;color:var(--navy)}
+.cal-m{display:grid;grid-template-columns:44px 1fr 44px;align-items:center;text-align:center;font-weight:600;margin-bottom:6px}
+.cal-m button{height:44px;border:0;background:transparent;font-size:1.6rem;color:var(--navy);border-radius:12px}
+.cal-m button:disabled{opacity:.25;cursor:not-allowed}
+.dow,.days{display:grid;grid-template-columns:repeat(7,1fr);gap:2px}
+.dow span{text-align:center;font-size:.75rem;font-weight:600;color:#5b6b7a;padding:6px 0}
+.days button{aspect-ratio:1;min-height:40px;border:0;border-radius:12px;background:transparent;font-size:.95rem;font-variant-numeric:tabular-nums;color:var(--ink);padding:0}
+.days button:hover:not(:disabled){background:var(--mist)}
+.days button:disabled{color:#b6c0ca;cursor:not-allowed;text-decoration:line-through}
+.days .today{box-shadow:inset 0 0 0 2px var(--blue)}
+.days .range{background:var(--mist);border-radius:0}
+.days .sel{background:var(--navy)!important;color:#fff;border-radius:12px}
+.cal-f{margin-top:10px;font-size:.84rem;color:#5b6b7a;text-align:center}
+.menu h3{margin:0;font-family:var(--display);color:var(--navy);font-size:1.15rem}
+.menu ol{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column}
+.menu li button{width:100%;text-align:left;padding:11px 12px;border:0;background:transparent;border-radius:12px;font-size:.98rem;display:flex;gap:12px}
+.menu li button:hover,.menu li button.cur{background:var(--mist)}
+.menu li b{flex:none;width:26px;color:var(--blue);font-variant-numeric:tabular-nums}
+
+@media (max-width:860px){
+  :root{--top:54px}
+  .page{align-items:flex-start;padding:24px 16px 32px}
+  .pm{width:calc(var(--w)*.75vw);max-width:170px;opacity:.9}
+  .star{display:none}
+  .enq .card{order:-1}
+  .split,.banner .row,.hero,.enq{grid-template-columns:1fr}
+  .split.rev>:first-child{order:2}
+  .hero .photo{margin:0 -16px;width:calc(100% + 32px);aspect-ratio:16/10;max-height:none;border-radius:0 0 50% 50%/0 0 22% 22%}
+  .hero .bhk{text-align:left}
+  .banner .frame{--ar:16/10}
+  .amen,.rules{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr 1fr;gap:10px}
+  .gal button{border-radius:18px;border-width:2px}
+  .frame{border-radius:24px}
+  .bot{grid-template-columns:auto 1fr auto;padding-left:12px;padding-right:12px}
+  #prev{padding:0 16px}
+  #next{padding:0 22px}
+}
+@media (max-width:480px){
+  .fgrid{grid-template-columns:1fr}
+  .brand{font-size:.95rem}
+  .top .btn{padding:0 14px}
+}
+@media (prefers-reduced-motion:reduce){.page.enter{animation:none}.bar,.gal img{transition:none}}
+</style>
+
+</head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .9l3.2 7.6 8.3.7-6.3 5.4 1.9 8.1L12 18.2 4.9 22.7l1.9-8.1L.5 9.2l8.3-.7z"/></symbol>
+  <symbol id="arrow" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M9 17h15m-6-6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5.5 9.5V21h13V9.5M10 21v-6h4v6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 10h18M8 3v4m8-4v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="brand">Taras Villa · Lonavala</div>
+  <div class="top-actions">
+    <button class="btn ghost sm" id="menuBtn" type="button" aria-haspopup="dialog">Menu</button>
+  </div>
+</header>
+
+<main id="pages"></main>
+<button class="side l" id="sPrev" type="button" aria-label="Previous page">&lsaquo;</button>
+<button class="side r" id="sNext" type="button" aria-label="Next page">&rsaquo;</button>
+
+<nav class="bot" aria-label="Page navigation">
+  <div class="bar" id="bar"></div>
+  <button class="btn ghost" id="prev" type="button" aria-label="Previous page"><span aria-hidden="true">&larr;</span><span>Back</span></button>
+  <div class="count" id="count">1 / 1</div>
+  <button class="btn go" id="next" type="button" aria-label="Next page"><span id="nextL">Next</span><span aria-hidden="true">&rarr;</span></button>
+</nav>
+
+<div class="ov" id="calOv" hidden>
+  <div class="cal" role="dialog" aria-modal="true" aria-labelledby="calT">
+    <div class="cal-h"><strong id="calT">Select check-in date</strong><button class="x-btn" id="calX" type="button" aria-label="Close calendar">&times;</button></div>
+    <div class="cal-m"><button id="calP" type="button" aria-label="Previous month">&lsaquo;</button><span id="calM"></span><button id="calN" type="button" aria-label="Next month">&rsaquo;</button></div>
+    <div class="dow"><span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span></div>
+    <div class="days" id="calD"></div>
+    <div class="cal-f" id="calF"></div>
+  </div>
+</div>
+
+<div class="ov" id="menuOv" hidden>
+  <div class="menu" role="dialog" aria-modal="true" aria-labelledby="menuT">
+    <div class="cal-h"><h3 id="menuT">Jump to</h3><button class="x-btn" id="menuX" type="button" aria-label="Close menu">&times;</button></div>
+    <ol id="menuL"></ol>
+  </div>
+</div>
+
+<div class="lb" id="lb" hidden>
+  <button class="x" id="lbX" type="button" aria-label="Close photo">&times;</button>
+  <button class="pv" id="lbP" type="button" aria-label="Previous photo">&lsaquo;</button>
+  <img id="lbI" alt="">
+  <button class="nx" id="lbN" type="button" aria-label="Next photo">&rsaquo;</button>
+</div>
+
+<script>
+const IMG = {"p29": "img/p29.jpg", "p102": "img/p102.jpg", "p163": "img/p163.jpg", "p179": "img/p179.jpg", "p207": "img/p207.jpg", "p250": "img/p250.jpg", "p255": "img/p255.jpg", "p280": "img/p280.jpg", "p301": "img/p301.jpg", "p322": "img/p322.jpg", "p343": "img/p343.jpg", "p368": "img/p368.jpg", "p372": "img/p372.jpg", "p391": "img/p391.jpg", "p430": "img/p430.jpg", "p447": "img/p447.jpg", "p503": "img/p503.jpg", "p517": "img/p517.jpg", "p521": "img/p521.jpg", "p531": "img/p531.jpg", "p541": "img/p541.jpg", "p545": "img/p545.jpg", "p554": "img/p554.jpg", "p558": "img/p558.jpg", "p562": "img/p562.jpg", "p566": "img/p566.jpg", "p570": "img/p570.jpg", "p574": "img/p574.jpg", "p579": "img/p579.jpg", "p583": "img/p583.jpg", "p589": "img/p589.jpg", "p593": "img/p593.jpg", "p597": "img/p597.jpg", "m43": "img/m43.webp", "m53": "img/m53.webp", "m78": "img/m78.webp", "m99": "img/m99.webp", "m115": "img/m115.webp", "m160": "img/m160.webp", "m176": "img/m176.webp", "m195": "img/m195.webp", "m230": "img/m230.webp", "m412": "img/m412.webp", "m514": "img/m514.webp", "m528": "img/m528.webp", "m605": "img/m605.webp", "m621": "img/m621.webp"};
+const WA = "917208713559";
+const MAP = "https://goo.gl/maps/4nbFi7Bs9LEpGuSa7";
+
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+const img = (k, alt="") => `<img data-k="${k}" alt="${alt}" decoding="async"${k==='p29'?'':' loading="lazy"'}>`;
+const palm = (k, pos, w, o={}) => `<img class="pm ${pos}" data-k="${k}" alt="" style="--w:${w};--r:${o.r||0}deg;--fx:${o.fx||1}">`;
+const star = (x, y, s=40) => `<svg class="star" style="--x:${x};--y:${y};--s:${s}px" aria-hidden="true"><use href="#star"/></svg>`;
+const arrow = `<svg aria-hidden="true"><use href="#arrow"/></svg>`;
+
+const bedroom = (n, cap, text, key, alt) => ({
+  name: `${n} Bedroom`,
+  html: `${palm('m43','tl',34)}${palm('m99','tr',16,{fx:-1})}${palm('m160','bl',34,{r:-8})}${star('4%','6%',34)}${star('50%','40%',44)}
+  <div class="wrap split"><div class="stack"><h2 class="h-lg">${n} Bedroom</h2><p class="lead">${text}</p></div>
+  <div class="stack"><div class="cap">${cap}</div><div class="frame">${img(key, alt)}</div></div></div>`
+});
+
+const pages = [
+ { name:"Welcome", html:`${palm('m43','tr',34,{fx:-1})}${palm('m53','tl',30)}${palm('m605','br',22)}${star('62%','10%',52)}${star('80%','72%',60)}
+  <div class="wrap hero"><div class="photo">${img('p29','Taras Villa Lonavala front view')}</div>
+  <div class="box"><div><h1 class="h-xl">Welcome to<br>Taras villa Lonavala</h1><p class="bhk">5 BHK</p></div>
+   <div class="meta"><b>Google map link :-</b><a href="${MAP}" target="_blank" rel="noopener">${MAP}</a></div>
+   <div class="meta"><span><b>Contact info:-</b> Harsh Chodankar</span><span><b>Call on:</b> +91 72087 13559</span></div>
+   <div class="cta-row"><a class="btn ghost" href="${MAP}" target="_blank" rel="noopener">View on Google Maps</a></div><p class="hint" style="margin:0;font-size:.95rem;font-weight:600;color:var(--navy)">Tap <b>Next</b> below to explore the villa &rarr;</p></div></div>` },
+ { name:"Intro to Taras Villa", html:`${palm('m53','tl',32)}${palm('m412','tr',22)}${palm('m78','bl',30,{r:10})}${star('45%','8%',40)}${star('6%','82%',56)}
+  <div class="wrap split"><div class="stack"><h2 class="h-lg">Intro to Taras Villa</h2><div class="sub">${arrow}<span>A Breezy Escape in Lonavala</span></div>
+  <p class="lead">Tucked away in the scenic hills of Lonavala, this villa is where misty mountains, a gentle riverside, and cool breezes create the perfect getaway. Wake up to the soothing sounds of nature and unwind in a cozy retreat designed for comfort and peace, just minutes away from Malavli Railway Station.</p></div>
+  <div class="frame" style="--ar:5/4">${img('p102','Taras Villa with parking area')}</div></div>` },
+ { name:"The Entrance", html:`${palm('m78','tl',28)}${palm('m412','tr',24,{fx:-1})}${palm('m160','bl',26,{r:-10})}${star('48%','70%',40)}${star('92%','90%',52)}
+  <div class="wrap banner"><div class="frame">${img('p163','Villa entrance with gate and lawn')}</div>
+  <div class="row"><h2 class="h-lg">The<br>Entrance</h2><p class="lead">As you enter the villa, you are welcomed by a spacious lawn with parking space for up to 4 cars. On your right, a soft and fresh green garden adds a peaceful and refreshing touch.</p></div></div>` },
+ { name:"Outdoor Lawn", html:`${palm('m195','tl',16)}${palm('m528','bl',24)}${palm('m605','br',20,{fx:-1})}${star('55%','28%',46)}${star('25%','72%',52)}
+  <div class="wrap split"><div class="stack"><h2 class="h-lg">Outdoor Lawn</h2><div class="cap">Fresh Green Serenity</div>
+  <p class="lead">A spacious lawn with soft, fresh green grass where you can relax and enjoy the peaceful surroundings. Perfect for morning tea, evening chill time, or simply enjoying the cool Lonavala breeze.</p></div>
+  <div class="frame" style="--ar:4/4.4">${img('p179','Lawn with gazebo seen from above')}</div></div>` },
+ { name:"The Pool", html:`${palm('m412','bl',16,{r:15})}${palm('m99','tr',16,{fx:-1})}${palm('m621','tl',22)}${star('52%','12%',54)}${star('94%','52%',34)}
+  <div class="wrap split rev"><div class="frame" style="--ar:12/6.5">${img('p207','Private pool with dolphin fountain')}</div>
+  <div class="stack"><h2 class="h-lg">The Pool</h2><div class="cap">Relaxing Pool</div><p class="lead">A refreshing private pool featuring beautiful 3D dolphin fountains that pour water like a small waterfall, creating a calm and relaxing vibe.</p></div></div>` },
+ { name:"Spacious Living Area", html:`${palm('m78','tl',28)}${palm('m412','tr',24,{fx:-1})}${palm('m160','bl',26,{r:-10})}${star('48%','70%',40)}${star('92%','90%',52)}
+  <div class="wrap banner"><div class="frame">${img('p250','Spacious living area with sofa and TV')}</div>
+  <div class="row"><h2 class="h-lg">Spacious<br>Living Area</h2><p class="lead">A large and comfortable hall designed for relaxing and spending quality time together. The open space creates a warm and welcoming atmosphere for everyone.</p></div></div>` },
+ bedroom('1st','Fresh Breeze Bedroom','A bright and refreshing bedroom where you can enjoy the cool blue breeze and a calm, cozy environment','p255','1st bedroom'),
+ bedroom('2nd','Relax & Unwind Room','A spacious and comfortable bedroom perfect for relaxing with family or friends and enjoying a calm stay.','p280','2nd bedroom'),
+ bedroom('3rd','Serene Stay Room','A comfortable bedroom designed for rest and relaxation, giving you a peaceful and cozy place to unwind.','p301','3rd bedroom'),
+ bedroom('4th','Peaceful Retreat Room','A quiet bedroom that offers a relaxing vibe and comfortable space to unwind after a long day of exploring Lonavala.','p322','4th bedroom'),
+ bedroom('5th','Cozy Comfort Room','A warm and cozy bedroom designed for a peaceful stay. With comfortable bedding and a calm atmosphere, it’s the perfect place to relax and recharge.','p343','5th bedroom'),
+ { name:"Bathrooms", html:`${palm('m53','tl',30)}${palm('m412','tr',20,{fx:-1})}${palm('m605','br',22)}${star('46%','8%',40)}${star('92%','80%',54)}
+  <div class="wrap stack" style="gap:26px"><h2 class="h-lg">Bathrooms</h2><div class="sub">${arrow}<span>Bathtub Bliss- Comfort Bath Space</span></div>
+  <p class="lead">A clean and spacious washroom with a bathtub, offering a refreshing and comfortable experience.</p>
+  <div class="split"><div class="frame" style="--ar:4/3">${img('p368','Bathroom with bathtub')}</div><div class="frame" style="--ar:4/3">${img('p372','Washroom with twin basins')}</div></div></div>` },
+ { name:"The Balcony view", html:`${palm('m412','bl',18,{r:12})}${palm('m605','tr',20)}${star('76%','6%',50)}${star('48%','66%',40)}
+  <div class="wrap banner"><div class="stack"><div class="cap">Balcony — Calm Corner</div><div class="frame" style="--ar:2.9/1">${img('p391','Balcony with green views')}</div></div>
+  <div class="row"><h2 class="h-lg">The<br>Balcony view</h2><p class="lead">A cozy balcony surrounded by lush greenery and mountain views, perfect for relaxing and enjoying the refreshing river breeze.</p></div></div>` },
+ { name:"The Terrace view", html:`${palm('m412','bl',18,{r:12})}${palm('m605','tr',20)}${star('76%','6%',50)}${star('48%','66%',40)}
+  <div class="wrap banner"><div class="stack"><div class="cap">Terrace — Open Sky Escape</div><div class="frame" style="--ar:2.9/1">${img('p430','Terrace with mountain and river view')}</div></div>
+  <div class="row"><h2 class="h-lg">The<br>Terrace view</h2><p class="lead">An open terrace with stunning views of mountains, greenery, and the river, perfect for relaxing under the sky.</p></div></div>` },
+ { name:"Villa Amenities", html:`${palm('m621','tr',20,{fx:-1})}${palm('m528','bl',16,{r:-20})}${palm('m605','br',18)}${star('84%','8%',46)}${star('52%','90%',40)}
+  <div class="wrap split"><div class="stack"><div class="amen-title"><i><svg aria-hidden="true"><use href="#home"/></svg></i><span>Everything You Need for a Perfect Stay</span></div>
+  <ul class="amen">
+   <li>5 BHK independent huge Property</li><li>5 AC in Bedrooms</li><li>Huge hall</li><li>Capacity up to 30 to 40 Max</li><li>Big Pvt Swimming Pool with fountain</li><li>Gazebo</li><li>Kitchen</li><li>Music System</li><li>Free Wi-Fi</li><li>Tv in Hall</li><li>Fridge</li><li>Geyser in all</li><li>Bathtub in 1 bathroom</li><li>lawn area</li><li>Indoor Games - Carrom &amp; Playing Cards</li><li>Parking Area</li><li>Caretaker</li></ul></div>
+  <div class="stack"><h2 class="h-lg">Villa<br>Amenities</h2><div class="frame" style="--ar:16/9">${img('p447','Kitchen, dining and hall')}</div></div></div>` },
+ { name:"The Gallery", id:"gallery", html:`${palm('m412','tl',16,{r:-15})}${palm('m605','tr',16,{fx:-1})}${star('88%','4%',40)}
+  <div class="wrap stack" style="gap:24px"><h2 class="h-lg">The Gallery</h2><div class="gal" id="gal"></div></div>` },
+ { name:"Rules & Regulations", html:`${palm('m621','tr',18,{fx:-1})}${palm('m605','br',16)}${palm('m528','bl',12,{r:-20})}${star('72%','5%',40)}${star('4%','90%',34)}
+  <div class="wrap stack" style="gap:26px"><h2 class="h-lg">Rules &amp; Regulations</h2>
+  <ol class="rules" id="rules"></ol></div>` },
+ { name:"Enquiry", id:"enq", html:`${palm('m53','tl',22)}${palm('m605','br',14)}${star('46%','4%',38)}
+  <div class="wrap enq"><aside><h2 class="h-lg" style="font-size:clamp(1.9rem,3.6vw,2.9rem)">We Look Forward to Hosting Your weekend Escape</h2>
+   <p class="lead">Your Taras Villa awaits. Let us create unforgettable memories amid swaying palms and gentle Mountain breezes.</p>
+   <div class="contact"><span><b>@</b> taras_tourist_services</span><span><b>Web:</b> http://www.tarastouristservices.com</span><span><b>Address:</b> near Malavli railway station, lonavala, India</span><span><b>Call:</b> +91 72087 13559 (Harsh Chodankar)</span></div>
+   <div class="h-lg" style="font-size:clamp(1.8rem,3.5vw,2.6rem)">Thank You<br>See You Soon</div></aside>
+   <div class="card" id="formCard"><div id="formWrap">
+<h2 style="font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:6px">Enquire Now</h2>
+<p class="hint" style="margin:0 0 18px;font-size:.92rem">Fill in your trip details. They open in WhatsApp, ready to send to the owner.</p>
+<form id="enqForm" novalidate>
+<div class="fgrid">
+ <div class="fld" id="fname"><label for="name">Your name</label><input class="in" id="name" type="text" autocomplete="name" placeholder="Full name"><span class="err">Please enter your name.</span></div>
+ <div class="fld" id="fphone"><label for="phone">Your number</label><div class="pre"><span>+91</span><input class="in" id="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile number"></div><span class="err">Please enter a valid phone number (at least 10 digits).</span></div>
+ <div class="fld" id="fin"><span class="lbl">Check in date</span><button class="in datebtn" id="dIn" type="button"><span id="inTxt" class="ph">Select check-in date</span><svg aria-hidden="true"><use href="#cal"/></svg></button><span class="err">Please choose a check-in date.</span></div>
+ <div class="fld" id="fout"><span class="lbl">Check out date</span><button class="in datebtn" id="dOut" type="button"><span id="outTxt" class="ph">Select check-out date</span><svg aria-hidden="true"><use href="#cal"/></svg></button><span class="err">Please choose a check-out date.</span></div>
+ <div class="full nights" id="nights" aria-live="polite" style="margin-top:-6px"></div>
+ <div class="fld" id="fpeople"><label for="people">Number of people</label><div class="step"><button type="button" data-s="people" data-v="-1" aria-label="Fewer people">&minus;</button><input class="in" id="people" type="number" inputmode="numeric" min="1" max="40" value="2"><button type="button" data-s="people" data-v="1" aria-label="More people">+</button></div><span class="err">Please enter the number of people.</span></div>
+ <div class="fld" id="fkids"><label for="kids">Number of kids</label><div class="step"><button type="button" data-s="kids" data-v="-1" aria-label="Fewer kids">&minus;</button><input class="in" id="kids" type="number" inputmode="numeric" min="0" max="40" value="0"><button type="button" data-s="kids" data-v="1" aria-label="More kids">+</button></div></div>
+ <div class="fld full" id="fgrp"><span class="lbl">Family or Friends</span><div class="chips" id="grpF" tabindex="-1"><label><input type="radio" name="grp" value="Family"><span>Family</span></label><label><input type="radio" name="grp" value="Friends"><span>Friends</span></label></div><span class="err">Please select Family or Friends.</span></div>
+ <div class="fld full"><label for="req">Requirement <span class="opt">(optional)</span></label><textarea class="in" id="req" rows="3" placeholder="Anything special you need, e.g. cake, decoration, early check-in"></textarea></div>
+ <div class="fld full" id="fbudget"><label for="budget">Budget</label><div class="pre"><span>₹</span><input class="in" id="budget" type="text" inputmode="numeric" placeholder="e.g. 25000"></div><span class="err">Please enter your budget.</span></div>
+ <div class="full"><p class="formerr" id="formErr" role="alert">Please fill the highlighted fields.</p><button class="btn submit" type="submit">Submit</button><p class="hint" style="text-align:center;margin:10px 0 0">WhatsApp opens with your details filled in. Press Send there to finish.</p></div>
+</div>
+</form>
+</div>
+<div id="okWrap" class="ok-card" hidden>
+ <h2>Almost done</h2>
+ <p style="margin:0">Your details are ready in WhatsApp. If it did not open, tap the green button, then press <b>Send</b> to reach the owner.</p>
+ <pre class="msg" id="msgBox"></pre>
+ <div class="btns"><a class="btn wa" id="waLink" href="#" target="_blank" rel="noopener">Open WhatsApp</a><button class="btn ghost" id="copyBtn" type="button">Copy message</button><button class="btn ghost" id="editBtn" type="button">Edit details</button></div>
+ <p class="hint" style="margin:0">Owner: Harsh Chodankar, +91 72087 13559</p>
+</div>
+</div></div>` }
+];
+
+const RULES = [
+ "Check-in time: 01:00 PM And Check-out time: 11:00 AM. Late check-out penalty is the full booking amount of the next day.",
+ "No entry will be permitted without complete payment. Remaining payment needs to be paid while check-in.",
+ "Refundable security deposit amount (Rs.3000) needs to be paid while check-in.",
+ "Guests need to submit photocopy of Government ID while check-in.",
+ "All guests need to take care of their belongings and valuables left in the accommodation unit, we are not responsible for you lost",
+ "After 10.00 PM, Speaker music and use of swimming pool is prohibited.",
+ "Use of drugs are strictly prohibited in the property.",
+ "Kitchen Charges Are Extra 1000/-",
+ "Advance Paid is not refundable in any case.",
+ "Visitors for guest’s residing at property are not allowed.",
+ "weekdays 500/- & weekend 1000/- per person is charged for a extra guest",
+ "Guest need to compensate if there is any of the physical damage to the property.",
+ "Spitting in the property will be charged 500/- Fine",
+ "Villas Are continuously booked ,we may take longer time than usual for cleaning purpose ,which may result in late check-in.",
+ "We try our best at your service , we expect guest to sorry us for some miscellaneous issues."
+];
+const GAL = ['p503','p517','p521','p531','p541','p545','p554','p558','p562','p566','p570','p574','p579','p583','p589','p593','p597','p102'];
+
+/* ---------- render ---------- */
+const host = $('#pages');
+pages.forEach((p, i) => {
+  const s = document.createElement('section');
+  s.className = 'page'; s.hidden = true; s.dataset.i = i; s.setAttribute('aria-label', p.name);
+  s.innerHTML = p.html; host.appendChild(s);
+});
+$('#rules').innerHTML = RULES.map((t, i) => `<li><span class="n">${i+1}</span><span class="t">${t.replace(/&/g,'&amp;')}</span></li>`).join('');
+$('#gal').innerHTML = GAL.map((k, i) => `<button type="button" data-lb="${i}" aria-label="Open photo ${i+1}">${img(k, 'Villa photo '+(i+1))}</button>`).join('');
+$$('img[data-k]').forEach(im => { im.src = IMG[im.dataset.k]; });
+$('#menuL').innerHTML = pages.map((p, i) => `<li><button type="button" data-p="${i}"><b>${i+1}</b><span>${p.name}</span></button></li>`).join('');
+
+/* ---------- navigation ---------- */
+let cur = 0;
+const enqIdx = pages.findIndex(p => p.id === 'enq');
+function show(n, push=true) {
+  n = Math.max(0, Math.min(pages.length - 1, n));
+  $$('.page').forEach(s => { s.hidden = (+s.dataset.i !== n); s.classList.remove('enter'); });
+  const pg = $$('.page')[n]; pg.classList.add('enter');
+  cur = n;
+  $('#count').textContent = `${n+1} / ${pages.length}`;
+  $('#bar').style.width = ((n+1)/pages.length*100) + '%';
+  $('#prev').disabled = n === 0;
+  $('#next').disabled = n === pages.length - 1;
+  $('#next').classList.toggle('pulse', n === 0);
+  $('#nextL').textContent = (n === enqIdx - 1) ? 'Enquire Now' : 'Next';
+  $('#next').style.visibility = (n === pages.length - 1) ? 'hidden' : 'visible';
+  $('#sPrev').style.visibility = n === 0 ? 'hidden' : 'visible';
+  $('#sNext').style.visibility = (n >= enqIdx) ? 'hidden' : 'visible';
+  $$('#menuL button').forEach(b => b.classList.toggle('cur', +b.dataset.p === n));
+  window.scrollTo(0, 0);
+  try { if (push) history.replaceState(null, '', '#p' + (n+1)); } catch (e) {}
+}
+$('#prev').onclick = () => show(cur - 1);
+$('#next').onclick = () => show(cur + 1);
+$('#sPrev').onclick = () => show(cur - 1);
+$('#sNext').onclick = () => show(cur + 1);
+document.addEventListener('click', e => { const g = e.target.closest('[data-go]'); if (g) show(enqIdx); });
+document.addEventListener('keydown', e => {
+  if (/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) return;
+  if (!$('#calOv').hidden || !$('#menuOv').hidden || !$('#lb').hidden) return;
+  if (e.key === 'ArrowRight') show(cur + 1);
+  if (e.key === 'ArrowLeft') show(cur - 1);
+});
+let tx = 0, ty = 0;
+document.addEventListener('touchstart', e => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, {passive:true});
+document.addEventListener('touchend', e => {
+  if (cur === enqIdx || !$('#calOv').hidden || !$('#menuOv').hidden || !$('#lb').hidden) return;
+  const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
+  if (Math.abs(dx) > 90 && Math.abs(dy) < Math.abs(dx) * .4) show(cur + (dx < 0 ? 1 : -1));
+}, {passive:true});
+
+/* menu */
+const menuOv = $('#menuOv');
+$('#menuBtn').onclick = () => { menuOv.hidden = false; };
+$('#menuX').onclick = () => { menuOv.hidden = true; };
+menuOv.addEventListener('click', e => { if (e.target === menuOv) menuOv.hidden = true; const b = e.target.closest('[data-p]'); if (b) { menuOv.hidden = true; show(+b.dataset.p); } });
+
+/* lightbox */
+let li = 0; const lb = $('#lb');
+function openLb(i) { li = (i + GAL.length) % GAL.length; $('#lbI').src = IMG[GAL[li]]; lb.hidden = false; }
+$('#gal').addEventListener('click', e => { const b = e.target.closest('[data-lb]'); if (b) openLb(+b.dataset.lb); });
+$('#lbX').onclick = () => lb.hidden = true;
+$('#lbP').onclick = () => openLb(li - 1);
+$('#lbN').onclick = () => openLb(li + 1);
+lb.addEventListener('click', e => { if (e.target === lb) lb.hidden = true; });
+
+/* ---------- calendar ---------- */
+const today = new Date(); today.setHours(0,0,0,0);
+const addDays = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
+const same = (a, b) => a && b && a.getTime() === b.getTime();
+const fmt = d => d.toLocaleDateString('en-IN', {weekday:'short', day:'numeric', month:'short', year:'numeric'});
+let cin = null, cout = null, mode = 'in', view = new Date(today.getFullYear(), today.getMonth(), 1);
+const calOv = $('#calOv');
+function openCal(m) {
+  if (m === 'out' && !cin) m = 'in';
+  mode = m;
+  const base = m === 'out' ? (cout || addDays(cin, 1)) : (cin || today);
+  view = new Date(base.getFullYear(), base.getMonth(), 1);
+  calOv.hidden = false; drawCal();
+}
+function closeCal() { calOv.hidden = true; }
+function drawCal() {
+  $('#calT').textContent = mode === 'in' ? 'Select check-in date' : 'Select check-out date';
+  $('#calM').textContent = view.toLocaleDateString('en-IN', {month:'long', year:'numeric'});
+  $('#calP').disabled = view <= new Date(today.getFullYear(), today.getMonth(), 1);
+  const first = view.getDay(), n = new Date(view.getFullYear(), view.getMonth()+1, 0).getDate();
+  const minD = mode === 'out' ? addDays(cin, 1) : today;
+  let h = '<span></span>'.repeat(first);
+  for (let d = 1; d <= n; d++) {
+    const dt = new Date(view.getFullYear(), view.getMonth(), d);
+    const dis = dt < minD;
+    const sel = same(dt, cin) || same(dt, cout);
+    const rng = cin && cout && dt > cin && dt < cout;
+    h += `<button type="button" data-d="${dt.getTime()}" class="${same(dt,today)?'today ':''}${sel?'sel ':''}${rng?'range':''}" ${dis?'disabled':''} aria-label="${fmt(dt)}">${d}</button>`;
+  }
+  $('#calD').innerHTML = h;
+  $('#calF').textContent = mode === 'out' && cin ? `Check-in: ${fmt(cin)}` : `Today is ${fmt(today)}`;
+}
+$('#calP').onclick = () => { view = new Date(view.getFullYear(), view.getMonth()-1, 1); drawCal(); };
+$('#calN').onclick = () => { view = new Date(view.getFullYear(), view.getMonth()+1, 1); drawCal(); };
+$('#calX').onclick = closeCal;
+calOv.addEventListener('click', e => {
+  if (e.target === calOv) return closeCal();
+  const b = e.target.closest('[data-d]'); if (!b || b.disabled) return;
+  const d = new Date(+b.dataset.d);
+  if (mode === 'in') {
+    cin = d; if (cout && cout <= cin) cout = null;
+    setDate('in'); setDate('out');
+    mode = 'out'; view = new Date(d.getFullYear(), d.getMonth(), 1); drawCal();
+  } else { cout = d; setDate('out'); closeCal(); }
+  updateNights();
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeCal(); menuOv.hidden = true; lb.hidden = true; } });
+function setDate(w) {
+  const d = w === 'in' ? cin : cout, el = $('#' + (w === 'in' ? 'inTxt' : 'outTxt'));
+  el.textContent = d ? fmt(d) : (w === 'in' ? 'Select check-in date' : 'Select check-out date');
+  el.className = d ? '' : 'ph';
+  if (d) $('#f' + w).classList.remove('bad');
+}
+function updateNights() {
+  const el = $('#nights');
+  if (cin && cout) { const n = Math.round((cout - cin) / 864e5); el.textContent = `${n} night${n>1?'s':''} stay`; } else el.textContent = '';
+}
+
+/* ---------- form ---------- */
+$('#dIn').onclick = () => openCal('in');
+$('#dOut').onclick = () => openCal('out');
+function clampNum(el, min, max) { let v = parseInt(el.value, 10); if (isNaN(v)) v = min; el.value = Math.max(min, Math.min(max, v)); }
+function bindStep(id, min, getMax) {
+  const el = $('#' + id);
+  $$(`[data-s="${id}"]`).forEach(b => b.onclick = () => { el.value = (parseInt(el.value,10) || 0) + (+b.dataset.v); clampNum(el, min, getMax()); sync(); });
+  el.addEventListener('change', () => { clampNum(el, min, getMax()); sync(); });
+}
+function sync() { clampNum($('#kids'), 0, Math.max(0, +$('#people').value)); }
+bindStep('people', 1, () => 40);
+bindStep('kids', 0, () => +$('#people').value);
+
+function bad(id, on) { $('#f' + id).classList.toggle('bad', on); return on; }
+function validate() {
+  const errs = [];
+  const name = $('#name').value.trim();
+  if (bad('name', name.length < 2)) errs.push('name');
+  const digits = $('#phone').value.replace(/\D/g, '');
+  if (bad('phone', digits.length < 10 || digits.length > 15)) errs.push('phone');
+  if (bad('in', !cin)) errs.push('dIn');
+  if (bad('out', !cout)) errs.push('dOut');
+  if (bad('people', !(+$('#people').value >= 1))) errs.push('people');
+  if (bad('grp', !$('input[name=grp]:checked'))) errs.push('grpF');
+  if (bad('budget', $('#budget').value.trim().length < 1)) errs.push('budget');
+  return errs;
+}
+['name','phone','budget'].forEach(id => $('#'+id).addEventListener('input', () => $('#f'+id).classList.remove('bad')));
+$$('input[name=grp]').forEach(r => r.addEventListener('change', () => $('#fgrp').classList.remove('bad')));
+
+function buildMsg() {
+  const n = Math.round((cout - cin) / 864e5);
+  const b = $('#budget').value.trim(), bn = b.replace(/[,\s₹]|rs\.?/gi, '');
+  const bud = /^\d+$/.test(bn) ? '₹' + (+bn).toLocaleString('en-IN') : b;
+  const req = $('#req').value.trim();
+  return [
+    '*New Enquiry - Taras Villa Lonavala*', '',
+    `*Name:* ${$('#name').value.trim()}`,
+    `*Number:* ${(()=>{const d=$('#phone').value.replace(/\D/g,'');return d.length===10?'+91 '+d:'+'+d})()}`,
+    `*Check-in:* ${fmt(cin)}`,
+    `*Check-out:* ${fmt(cout)} (${n} night${n>1?'s':''})`,
+    `*Guests:* ${$('#people').value}`,
+    `*Kids:* ${$('#kids').value}`,
+    `*Group:* ${$('input[name=grp]:checked').value}`,
+    `*Requirement:* ${req || 'None'}`,
+    `*Budget:* ${bud}`
+  ].join('\n');
+}
+let lastMsg = '';
+$('#enqForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const errs = validate();
+  $('#formErr').classList.toggle('on', errs.length > 0);
+  if (errs.length) { const t = $('#' + errs[0]); t.scrollIntoView({block:'center', behavior:'smooth'}); try { t.focus({preventScroll:true}); } catch (x) {} return; }
+  lastMsg = buildMsg();
+  const url = `https://wa.me/${WA}?text=${encodeURIComponent(lastMsg)}`;
+  $('#waLink').href = url; $('#msgBox').textContent = lastMsg;
+  $('#formWrap').hidden = true; $('#okWrap').hidden = false;
+  $('#formCard').scrollIntoView({block:'start'});
+  if (window.self === window.top) { window.location.href = url; }
+  else { const a = document.createElement('a'); a.href = url; a.target = '_blank'; a.rel = 'noopener'; document.body.appendChild(a); a.click(); a.remove(); }
+});
+$('#editBtn').onclick = () => { $('#okWrap').hidden = true; $('#formWrap').hidden = false; };
+$('#copyBtn').onclick = async () => {
+  const b = $('#copyBtn');
+  try { await navigator.clipboard.writeText(lastMsg); b.textContent = 'Copied'; }
+  catch (e) { const r = document.createRange(); r.selectNodeContents($('#msgBox')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected, press copy'; }
+  setTimeout(() => b.textContent = 'Copy message', 2200);
+};
+
+/* start */
+const m = /^#p(\d+)$/.exec(location.hash);
+show(m ? +m[1] - 1 : 0, false);
+</script>
+</body></html>
